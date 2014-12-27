@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>6.2</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{4f2692e5-0104-443d-9a20-13105fb80113}</ProjectGuid>
+    <ProjectGuid>{f2769b79-0444-4594-a23d-807bb5f0d6ea}</ProjectGuid>
     <avrdevice>ATmega328P</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>StaticLibrary</OutputType>
@@ -24,1463 +24,1432 @@
     <ProgFlashFromRam>true</ProgFlashFromRam>
     <RamSnippetAddress />
     <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
     <OverrideVtorValue />
     <BootSegment>2</BootSegment>
     <eraseonlaunchrule>1</eraseonlaunchrule>
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-        <options />
-        <configurations />
-        <files />
-        <documentation help="" />
-        <offline-documentation help="" />
-        <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.17.0" />
-        </dependencies>
-      </framework-data>
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.20.1" />
+  </dependencies>
+</framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <!-- edited by Daniel A. Maierhofer 08/2014 -->
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
-        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
-        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-        <avrgcc.linker.libraries.Libraries>
-          <ListValues>
-            <Value>libm</Value>
-          </ListValues>
-        </avrgcc.linker.libraries.Libraries>
-        <avrgcc.assembler.general.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common</Value>
-          </ListValues>
-        </avrgcc.assembler.general.IncludePaths>
-        <avrgcc.compiler.symbols.DefSymbols>
-          <ListValues>
-            <Value>NDEBUG</Value>
-          </ListValues>
-        </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
-      </AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.directories.IncludePaths><ListValues><Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common</Value></ListValues></avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries><ListValues><Value>libm</Value></ListValues></avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths><ListValues><Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common</Value></ListValues></avrgcc.assembler.general.IncludePaths>
+  <avrgcc.compiler.symbols.DefSymbols><ListValues><Value>NDEBUG</Value></ListValues></avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+</AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
-        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
-        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-        <avrgcc.linker.libraries.Libraries>
-          <ListValues>
-            <Value>libm</Value>
-          </ListValues>
-        </avrgcc.linker.libraries.Libraries>
-        <avrgcc.assembler.general.IncludePaths>
-          <ListValues>
-            <Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common</Value>
-          </ListValues>
-        </avrgcc.assembler.general.IncludePaths>
-        <avrgcc.compiler.symbols.DefSymbols>
-          <ListValues>
-            <Value>DEBUG</Value>
-          </ListValues>
-        </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
-        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
-        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
-      </AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.directories.IncludePaths><ListValues><Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common</Value></ListValues></avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries><ListValues><Value>libm</Value></ListValues></avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths><ListValues><Value>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common</Value></ListValues></avrgcc.assembler.general.IncludePaths>
+  <avrgcc.compiler.symbols.DefSymbols><ListValues><Value>DEBUG</Value></ListValues></avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\asmdef.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\asmdef.h">
       <SubType>compile</SubType>
       <Link>asmdef.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\ftoa_engine.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\ftoa_engine.h">
       <SubType>compile</SubType>
       <Link>ftoa_engine.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\ntz.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\ntz.h">
       <SubType>compile</SubType>
       <Link>ntz.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\sectionname.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\sectionname.h">
       <SubType>compile</SubType>
       <Link>sectionname.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\alloca.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\alloca.h">
       <SubType>compile</SubType>
       <Link>alloca.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\assert.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\assert.h">
       <SubType>compile</SubType>
       <Link>assert.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\boot.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\boot.h">
       <SubType>compile</SubType>
       <Link>boot.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\builtins.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\builtins.h">
       <SubType>compile</SubType>
       <Link>builtins.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\common.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\common.h">
       <SubType>compile</SubType>
       <Link>common.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\cpufunc.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\cpufunc.h">
       <SubType>compile</SubType>
       <Link>cpufunc.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\crc16.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\crc16.h">
       <SubType>compile</SubType>
       <Link>crc16.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\delay.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\delay.h">
       <SubType>compile</SubType>
       <Link>delay.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\eeprom.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\eeprom.h">
       <SubType>compile</SubType>
       <Link>eeprom.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\fuse.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\fuse.h">
       <SubType>compile</SubType>
       <Link>fuse.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\interrupt.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h">
       <SubType>compile</SubType>
       <Link>interrupt.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\io.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h">
       <SubType>compile</SubType>
       <Link>io.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom168pa.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom168pa.h">
       <SubType>compile</SubType>
       <Link>iom168pa.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom16u4.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom16u4.h">
       <SubType>compile</SubType>
       <Link>iom16u4.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom32.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom32.h">
       <SubType>compile</SubType>
       <Link>iom32.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom328.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom328.h">
       <SubType>compile</SubType>
       <Link>iom328.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom328p.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom328p.h">
       <SubType>compile</SubType>
       <Link>iom328p.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom32a.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom32a.h">
       <SubType>compile</SubType>
       <Link>iom32a.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom32u4.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom32u4.h">
       <SubType>compile</SubType>
       <Link>iom32u4.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom8.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom8.h">
       <SubType>compile</SubType>
       <Link>iom8.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom88pa.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom88pa.h">
       <SubType>compile</SubType>
       <Link>iom88pa.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iom8a.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iom8a.h">
       <SubType>compile</SubType>
       <Link>iom8a.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iomx8.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iomx8.h">
       <SubType>compile</SubType>
       <Link>iomx8.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn13a.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn13a.h">
       <SubType>compile</SubType>
       <Link>iotn13a.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn2313a.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn2313a.h">
       <SubType>compile</SubType>
       <Link>iotn2313a.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn4.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn4.h">
       <SubType>compile</SubType>
       <Link>iotn4.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn45.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn45.h">
       <SubType>compile</SubType>
       <Link>iotn45.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn5.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn5.h">
       <SubType>compile</SubType>
       <Link>iotn5.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn85.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn85.h">
       <SubType>compile</SubType>
       <Link>iotn85.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotn9.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotn9.h">
       <SubType>compile</SubType>
       <Link>iotn9.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\iotnx5.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\iotnx5.h">
       <SubType>compile</SubType>
       <Link>iotnx5.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\lock.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h">
       <SubType>compile</SubType>
       <Link>lock.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\parity.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\parity.h">
       <SubType>compile</SubType>
       <Link>parity.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\pgmspace.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h">
       <SubType>compile</SubType>
       <Link>pgmspace.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\portpins.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\portpins.h">
       <SubType>compile</SubType>
       <Link>portpins.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\power.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\power.h">
       <SubType>compile</SubType>
       <Link>power.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h">
       <SubType>compile</SubType>
       <Link>sfr_defs.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\signal.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\signal.h">
       <SubType>compile</SubType>
       <Link>signal.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\signature.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\signature.h">
       <SubType>compile</SubType>
       <Link>signature.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\sleep.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sleep.h">
       <SubType>compile</SubType>
       <Link>sleep.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\version.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\version.h">
       <SubType>compile</SubType>
       <Link>version.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\wdt.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\wdt.h">
       <SubType>compile</SubType>
       <Link>wdt.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\avr\xmega.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\xmega.h">
       <SubType>compile</SubType>
       <Link>xmega.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\compat\deprecated.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\compat\deprecated.h">
       <SubType>compile</SubType>
       <Link>deprecated.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\compat\ina90.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\compat\ina90.h">
       <SubType>compile</SubType>
       <Link>ina90.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\compat\twi.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\compat\twi.h">
       <SubType>compile</SubType>
       <Link>twi.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\ctype.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\ctype.h">
       <SubType>compile</SubType>
       <Link>ctype.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\errno.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\errno.h">
       <SubType>compile</SubType>
       <Link>errno.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\inttypes.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h">
       <SubType>compile</SubType>
       <Link>inttypes.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\math.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\math.h">
       <SubType>compile</SubType>
       <Link>math.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\setjmp.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\setjmp.h">
       <SubType>compile</SubType>
       <Link>setjmp.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\stdfix-avrlibc.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\stdfix-avrlibc.h">
       <SubType>compile</SubType>
       <Link>stdfix-avrlibc.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\stdint.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\stdint.h">
       <SubType>compile</SubType>
       <Link>stdint.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\stdio.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h">
       <SubType>compile</SubType>
       <Link>stdio.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\stdlib.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h">
       <SubType>compile</SubType>
       <Link>stdlib.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\string.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h">
       <SubType>compile</SubType>
       <Link>string.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\atomic.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h">
       <SubType>compile</SubType>
       <Link>atomic.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\crc16.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\crc16.h">
       <SubType>compile</SubType>
       <Link>crc16.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\delay.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay.h">
       <SubType>compile</SubType>
       <Link>delay.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\delay_basic.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h">
       <SubType>compile</SubType>
       <Link>delay_basic.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\parity.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\parity.h">
       <SubType>compile</SubType>
       <Link>parity.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\setbaud.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\setbaud.h">
       <SubType>compile</SubType>
       <Link>setbaud.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\include\util\twi.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\include\util\twi.h">
       <SubType>compile</SubType>
       <Link>twi.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eedef.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eedef.h">
       <SubType>compile</SubType>
       <Link>eedef.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eerd_block.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eerd_block.S">
       <SubType>compile</SubType>
       <Link>eerd_block.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eerd_byte.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eerd_byte.S">
       <SubType>compile</SubType>
       <Link>eerd_byte.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eerd_dword.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eerd_dword.S">
       <SubType>compile</SubType>
       <Link>eerd_dword.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eerd_word.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eerd_word.S">
       <SubType>compile</SubType>
       <Link>eerd_word.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eeupd_block.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eeupd_block.S">
       <SubType>compile</SubType>
       <Link>eeupd_block.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eeupd_byte.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eeupd_byte.S">
       <SubType>compile</SubType>
       <Link>eeupd_byte.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eeupd_dword.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eeupd_dword.S">
       <SubType>compile</SubType>
       <Link>eeupd_dword.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eeupd_word.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eeupd_word.S">
       <SubType>compile</SubType>
       <Link>eeupd_word.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eewr_block.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eewr_block.S">
       <SubType>compile</SubType>
       <Link>eewr_block.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eewr_byte.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eewr_byte.S">
       <SubType>compile</SubType>
       <Link>eewr_byte.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eewr_dword.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eewr_dword.S">
       <SubType>compile</SubType>
       <Link>eewr_dword.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\eewr_word.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\eewr_word.S">
       <SubType>compile</SubType>
       <Link>eewr_word.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\itoa.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\itoa.S">
       <SubType>compile</SubType>
       <Link>itoa.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\itoa_ncheck.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\itoa_ncheck.S">
       <SubType>compile</SubType>
       <Link>itoa_ncheck.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\ltoa.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\ltoa.S">
       <SubType>compile</SubType>
       <Link>ltoa.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\ltoa_ncheck.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\ltoa_ncheck.S">
       <SubType>compile</SubType>
       <Link>ltoa_ncheck.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\mul10.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\mul10.S">
       <SubType>compile</SubType>
       <Link>mul10.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\mulsi10.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\mulsi10.S">
       <SubType>compile</SubType>
       <Link>mulsi10.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\ultoa.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\ultoa.S">
       <SubType>compile</SubType>
       <Link>ultoa.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\ultoa_ncheck.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\ultoa_ncheck.S">
       <SubType>compile</SubType>
       <Link>ultoa_ncheck.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\utoa.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\utoa.S">
       <SubType>compile</SubType>
       <Link>utoa.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\misc\utoa_ncheck.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\misc\utoa_ncheck.S">
       <SubType>compile</SubType>
       <Link>utoa_ncheck.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memccpy_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memccpy_P.S">
       <SubType>compile</SubType>
       <Link>memccpy_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memchr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memchr_P.S">
       <SubType>compile</SubType>
       <Link>memchr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memcmp_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memcmp_P.S">
       <SubType>compile</SubType>
       <Link>memcmp_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memcmp_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memcmp_PF.S">
       <SubType>compile</SubType>
       <Link>memcmp_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memcpy_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memcpy_P.S">
       <SubType>compile</SubType>
       <Link>memcpy_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memcpy_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memcpy_PF.S">
       <SubType>compile</SubType>
       <Link>memcpy_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\memrchr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\memrchr_P.S">
       <SubType>compile</SubType>
       <Link>memrchr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcasecmp_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcasecmp_P.S">
       <SubType>compile</SubType>
       <Link>strcasecmp_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcasecmp_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcasecmp_PF.S">
       <SubType>compile</SubType>
       <Link>strcasecmp_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcat_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcat_P.S">
       <SubType>compile</SubType>
       <Link>strcat_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcat_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcat_PF.S">
       <SubType>compile</SubType>
       <Link>strcat_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strchrnul_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strchrnul_P.S">
       <SubType>compile</SubType>
       <Link>strchrnul_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strchr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strchr_P.S">
       <SubType>compile</SubType>
       <Link>strchr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcmp_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcmp_P.S">
       <SubType>compile</SubType>
       <Link>strcmp_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcmp_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcmp_PF.S">
       <SubType>compile</SubType>
       <Link>strcmp_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcpy_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcpy_P.S">
       <SubType>compile</SubType>
       <Link>strcpy_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcpy_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcpy_PF.S">
       <SubType>compile</SubType>
       <Link>strcpy_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strcspn_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strcspn_P.S">
       <SubType>compile</SubType>
       <Link>strcspn_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlcat_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlcat_P.S">
       <SubType>compile</SubType>
       <Link>strlcat_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlcat_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlcat_PF.S">
       <SubType>compile</SubType>
       <Link>strlcat_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlcpy_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlcpy_P.S">
       <SubType>compile</SubType>
       <Link>strlcpy_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlcpy_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlcpy_PF.S">
       <SubType>compile</SubType>
       <Link>strlcpy_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlen_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlen_P.S">
       <SubType>compile</SubType>
       <Link>strlen_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strlen_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strlen_PF.S">
       <SubType>compile</SubType>
       <Link>strlen_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncasecmp_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncasecmp_P.S">
       <SubType>compile</SubType>
       <Link>strncasecmp_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncasecmp_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncasecmp_PF.S">
       <SubType>compile</SubType>
       <Link>strncasecmp_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncat_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncat_P.S">
       <SubType>compile</SubType>
       <Link>strncat_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncat_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncat_PF.S">
       <SubType>compile</SubType>
       <Link>strncat_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncmp_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncmp_P.S">
       <SubType>compile</SubType>
       <Link>strncmp_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncmp_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncmp_PF.S">
       <SubType>compile</SubType>
       <Link>strncmp_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncpy_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncpy_P.S">
       <SubType>compile</SubType>
       <Link>strncpy_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strncpy_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strncpy_PF.S">
       <SubType>compile</SubType>
       <Link>strncpy_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strnlen_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strnlen_P.S">
       <SubType>compile</SubType>
       <Link>strnlen_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strnlen_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strnlen_PF.S">
       <SubType>compile</SubType>
       <Link>strnlen_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strpbrk_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strpbrk_P.S">
       <SubType>compile</SubType>
       <Link>strpbrk_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strrchr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strrchr_P.S">
       <SubType>compile</SubType>
       <Link>strrchr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strsep_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strsep_P.S">
       <SubType>compile</SubType>
       <Link>strsep_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strspn_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strspn_P.S">
       <SubType>compile</SubType>
       <Link>strspn_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strstr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strstr_P.S">
       <SubType>compile</SubType>
       <Link>strstr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strstr_PF.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strstr_PF.S">
       <SubType>compile</SubType>
       <Link>strstr_PF.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strtok_P.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strtok_P.c">
       <SubType>compile</SubType>
       <Link>strtok_P.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\pmstring\strtok_rP.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\pmstring\strtok_rP.S">
       <SubType>compile</SubType>
       <Link>strtok_rP.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\clearerr.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\clearerr.c">
       <SubType>compile</SubType>
       <Link>clearerr.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fclose.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fclose.c">
       <SubType>compile</SubType>
       <Link>fclose.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fdevopen.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fdevopen.c">
       <SubType>compile</SubType>
       <Link>fdevopen.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\feof.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\feof.c">
       <SubType>compile</SubType>
       <Link>feof.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\ferror.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\ferror.c">
       <SubType>compile</SubType>
       <Link>ferror.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fgetc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fgetc.c">
       <SubType>compile</SubType>
       <Link>fgetc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fgets.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fgets.c">
       <SubType>compile</SubType>
       <Link>fgets.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fprintf.c">
       <SubType>compile</SubType>
       <Link>fprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fprintf_p.c">
       <SubType>compile</SubType>
       <Link>fprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fputc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fputc.c">
       <SubType>compile</SubType>
       <Link>fputc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fputs.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fputs.c">
       <SubType>compile</SubType>
       <Link>fputs.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fputs_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fputs_p.c">
       <SubType>compile</SubType>
       <Link>fputs_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fread.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fread.c">
       <SubType>compile</SubType>
       <Link>fread.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fscanf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fscanf.c">
       <SubType>compile</SubType>
       <Link>fscanf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fscanf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fscanf_p.c">
       <SubType>compile</SubType>
       <Link>fscanf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\fwrite.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\fwrite.c">
       <SubType>compile</SubType>
       <Link>fwrite.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\getc.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\getc.S">
       <SubType>compile</SubType>
       <Link>getc.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\getchar.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\getchar.c">
       <SubType>compile</SubType>
       <Link>getchar.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\gets.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\gets.c">
       <SubType>compile</SubType>
       <Link>gets.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\iob.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\iob.c">
       <SubType>compile</SubType>
       <Link>iob.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\printf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\printf.c">
       <SubType>compile</SubType>
       <Link>printf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\printf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\printf_p.c">
       <SubType>compile</SubType>
       <Link>printf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\putc.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\putc.S">
       <SubType>compile</SubType>
       <Link>putc.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\putchar.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\putchar.c">
       <SubType>compile</SubType>
       <Link>putchar.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\puts.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\puts.c">
       <SubType>compile</SubType>
       <Link>puts.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\puts_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\puts_p.c">
       <SubType>compile</SubType>
       <Link>puts_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\scanf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\scanf.c">
       <SubType>compile</SubType>
       <Link>scanf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\scanf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\scanf_p.c">
       <SubType>compile</SubType>
       <Link>scanf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\snprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\snprintf.c">
       <SubType>compile</SubType>
       <Link>snprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\snprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\snprintf_p.c">
       <SubType>compile</SubType>
       <Link>snprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\sprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\sprintf.c">
       <SubType>compile</SubType>
       <Link>sprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\sprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\sprintf_p.c">
       <SubType>compile</SubType>
       <Link>sprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\sscanf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\sscanf.c">
       <SubType>compile</SubType>
       <Link>sscanf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\sscanf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\sscanf_p.c">
       <SubType>compile</SubType>
       <Link>sscanf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\stdio_private.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\stdio_private.h">
       <SubType>compile</SubType>
       <Link>stdio_private.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\ultoa_invert.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\ultoa_invert.S">
       <SubType>compile</SubType>
       <Link>ultoa_invert.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\ungetc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\ungetc.c">
       <SubType>compile</SubType>
       <Link>ungetc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vfprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vfprintf.c">
       <SubType>compile</SubType>
       <Link>vfprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vfprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vfprintf_p.c">
       <SubType>compile</SubType>
       <Link>vfprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vfscanf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vfscanf.c">
       <SubType>compile</SubType>
       <Link>vfscanf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vfscanf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vfscanf_p.c">
       <SubType>compile</SubType>
       <Link>vfscanf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vprintf.c">
       <SubType>compile</SubType>
       <Link>vprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vscanf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vscanf.c">
       <SubType>compile</SubType>
       <Link>vscanf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vsnprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vsnprintf.c">
       <SubType>compile</SubType>
       <Link>vsnprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vsnprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vsnprintf_p.c">
       <SubType>compile</SubType>
       <Link>vsnprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vsprintf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vsprintf.c">
       <SubType>compile</SubType>
       <Link>vsprintf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\vsprintf_p.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\vsprintf_p.c">
       <SubType>compile</SubType>
       <Link>vsprintf_p.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdio\xtoa_fast.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdio\xtoa_fast.h">
       <SubType>compile</SubType>
       <Link>xtoa_fast.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\abort.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\abort.S">
       <SubType>compile</SubType>
       <Link>abort.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\abs.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\abs.c">
       <SubType>compile</SubType>
       <Link>abs.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\assert.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\assert.c">
       <SubType>compile</SubType>
       <Link>assert.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\atof.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\atof.S">
       <SubType>compile</SubType>
       <Link>atof.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\atoi.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\atoi.S">
       <SubType>compile</SubType>
       <Link>atoi.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\atol.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\atol.S">
       <SubType>compile</SubType>
       <Link>atol.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\bsearch.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\bsearch.c">
       <SubType>compile</SubType>
       <Link>bsearch.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\calloc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\calloc.c">
       <SubType>compile</SubType>
       <Link>calloc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\ctype.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\ctype.S">
       <SubType>compile</SubType>
       <Link>ctype.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\cty_isfalse.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\cty_isfalse.S">
       <SubType>compile</SubType>
       <Link>cty_isfalse.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\div.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\div.S">
       <SubType>compile</SubType>
       <Link>div.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\dtoa_conv.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\dtoa_conv.h">
       <SubType>compile</SubType>
       <Link>dtoa_conv.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\dtoa_prf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\dtoa_prf.c">
       <SubType>compile</SubType>
       <Link>dtoa_prf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\dtostre.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\dtostre.c">
       <SubType>compile</SubType>
       <Link>dtostre.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\dtostrf.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\dtostrf.c">
       <SubType>compile</SubType>
       <Link>dtostrf.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\errno.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\errno.c">
       <SubType>compile</SubType>
       <Link>errno.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\exit.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\exit.S">
       <SubType>compile</SubType>
       <Link>exit.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\ftoa_engine.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\ftoa_engine.S">
       <SubType>compile</SubType>
       <Link>ftoa_engine.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isalnum.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isalnum.S">
       <SubType>compile</SubType>
       <Link>isalnum.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isalpha.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isalpha.S">
       <SubType>compile</SubType>
       <Link>isalpha.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isascii.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isascii.S">
       <SubType>compile</SubType>
       <Link>isascii.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isblank.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isblank.S">
       <SubType>compile</SubType>
       <Link>isblank.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\iscntrl.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\iscntrl.S">
       <SubType>compile</SubType>
       <Link>iscntrl.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isdigit.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isdigit.S">
       <SubType>compile</SubType>
       <Link>isdigit.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isprint.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isprint.S">
       <SubType>compile</SubType>
       <Link>isprint.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\ispunct.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\ispunct.S">
       <SubType>compile</SubType>
       <Link>ispunct.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isspace.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isspace.S">
       <SubType>compile</SubType>
       <Link>isspace.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\isxdigit.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\isxdigit.S">
       <SubType>compile</SubType>
       <Link>isxdigit.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\labs.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\labs.c">
       <SubType>compile</SubType>
       <Link>labs.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\ldiv.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\ldiv.S">
       <SubType>compile</SubType>
       <Link>ldiv.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\malloc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\malloc.c">
       <SubType>compile</SubType>
       <Link>malloc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\qsort.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\qsort.c">
       <SubType>compile</SubType>
       <Link>qsort.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\rand.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\rand.c">
       <SubType>compile</SubType>
       <Link>rand.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\random.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\random.c">
       <SubType>compile</SubType>
       <Link>random.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\realloc.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\realloc.c">
       <SubType>compile</SubType>
       <Link>realloc.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\setjmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\setjmp.S">
       <SubType>compile</SubType>
       <Link>setjmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\stdlib_private.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\stdlib_private.h">
       <SubType>compile</SubType>
       <Link>stdlib_private.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\strtod.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\strtod.c">
       <SubType>compile</SubType>
       <Link>strtod.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\strtol.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\strtol.c">
       <SubType>compile</SubType>
       <Link>strtol.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\strtoul.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\strtoul.c">
       <SubType>compile</SubType>
       <Link>strtoul.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\toascii.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\toascii.S">
       <SubType>compile</SubType>
       <Link>toascii.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\tolower.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\tolower.S">
       <SubType>compile</SubType>
       <Link>tolower.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\stdlib\toupper.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\stdlib\toupper.S">
       <SubType>compile</SubType>
       <Link>toupper.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\ffs.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\ffs.S">
       <SubType>compile</SubType>
       <Link>ffs.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\ffsl.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\ffsl.S">
       <SubType>compile</SubType>
       <Link>ffsl.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\ffsll.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\ffsll.S">
       <SubType>compile</SubType>
       <Link>ffsll.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memccpy.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memccpy.S">
       <SubType>compile</SubType>
       <Link>memccpy.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memchr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memchr.S">
       <SubType>compile</SubType>
       <Link>memchr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memcmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memcmp.S">
       <SubType>compile</SubType>
       <Link>memcmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memcpy.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memcpy.S">
       <SubType>compile</SubType>
       <Link>memcpy.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memmem.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memmem.S">
       <SubType>compile</SubType>
       <Link>memmem.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memmem_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memmem_P.S">
       <SubType>compile</SubType>
       <Link>memmem_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memmove.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memmove.S">
       <SubType>compile</SubType>
       <Link>memmove.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memrchr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memrchr.S">
       <SubType>compile</SubType>
       <Link>memrchr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\memset.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\memset.S">
       <SubType>compile</SubType>
       <Link>memset.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcasecmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcasecmp.S">
       <SubType>compile</SubType>
       <Link>strcasecmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcasestr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcasestr.S">
       <SubType>compile</SubType>
       <Link>strcasestr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcasestr_P.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcasestr_P.S">
       <SubType>compile</SubType>
       <Link>strcasestr_P.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcat.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcat.S">
       <SubType>compile</SubType>
       <Link>strcat.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strchr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strchr.S">
       <SubType>compile</SubType>
       <Link>strchr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strchrnul.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strchrnul.S">
       <SubType>compile</SubType>
       <Link>strchrnul.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcmp.S">
       <SubType>compile</SubType>
       <Link>strcmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcpy.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcpy.S">
       <SubType>compile</SubType>
       <Link>strcpy.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strcspn.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strcspn.S">
       <SubType>compile</SubType>
       <Link>strcspn.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strdup.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strdup.c">
       <SubType>compile</SubType>
       <Link>strdup.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strlcat.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strlcat.S">
       <SubType>compile</SubType>
       <Link>strlcat.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strlcpy.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strlcpy.S">
       <SubType>compile</SubType>
       <Link>strlcpy.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strlen.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strlen.S">
       <SubType>compile</SubType>
       <Link>strlen.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strlwr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strlwr.S">
       <SubType>compile</SubType>
       <Link>strlwr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strncasecmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strncasecmp.S">
       <SubType>compile</SubType>
       <Link>strncasecmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strncat.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strncat.S">
       <SubType>compile</SubType>
       <Link>strncat.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strncmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strncmp.S">
       <SubType>compile</SubType>
       <Link>strncmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strncpy.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strncpy.S">
       <SubType>compile</SubType>
       <Link>strncpy.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strnlen.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strnlen.S">
       <SubType>compile</SubType>
       <Link>strnlen.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strpbrk.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strpbrk.S">
       <SubType>compile</SubType>
       <Link>strpbrk.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strrchr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strrchr.S">
       <SubType>compile</SubType>
       <Link>strrchr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strrev.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strrev.S">
       <SubType>compile</SubType>
       <Link>strrev.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strsep.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strsep.S">
       <SubType>compile</SubType>
       <Link>strsep.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strspn.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strspn.S">
       <SubType>compile</SubType>
       <Link>strspn.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strstr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strstr.S">
       <SubType>compile</SubType>
       <Link>strstr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strtok.c">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strtok.c">
       <SubType>compile</SubType>
       <Link>strtok.c</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strtok_r.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strtok_r.S">
       <SubType>compile</SubType>
       <Link>strtok_r.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libc\string\strupr.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libc\string\strupr.S">
       <SubType>compile</SubType>
       <Link>strupr.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\acos.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\acos.S">
       <SubType>compile</SubType>
       <Link>acos.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\addsf3.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\addsf3.S">
       <SubType>compile</SubType>
       <Link>addsf3.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\addsf3x.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\addsf3x.S">
       <SubType>compile</SubType>
       <Link>addsf3x.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\asin.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\asin.S">
       <SubType>compile</SubType>
       <Link>asin.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\asmdef.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\asmdef.h">
       <SubType>compile</SubType>
       <Link>asmdef.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\atan.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\atan.S">
       <SubType>compile</SubType>
       <Link>atan.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\atan2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\atan2.S">
       <SubType>compile</SubType>
       <Link>atan2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\cbrt.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\cbrt.S">
       <SubType>compile</SubType>
       <Link>cbrt.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\ceil.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\ceil.S">
       <SubType>compile</SubType>
       <Link>ceil.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\cmpsf2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\cmpsf2.S">
       <SubType>compile</SubType>
       <Link>cmpsf2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\copysign.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\copysign.S">
       <SubType>compile</SubType>
       <Link>copysign.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\cos.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\cos.S">
       <SubType>compile</SubType>
       <Link>cos.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\cosh.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\cosh.S">
       <SubType>compile</SubType>
       <Link>cosh.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\divsf3.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\divsf3.S">
       <SubType>compile</SubType>
       <Link>divsf3.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\divsf3x.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\divsf3x.S">
       <SubType>compile</SubType>
       <Link>divsf3x.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\exp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\exp.S">
       <SubType>compile</SubType>
       <Link>exp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fdim.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fdim.S">
       <SubType>compile</SubType>
       <Link>fdim.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fixsfdi.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fixsfdi.S">
       <SubType>compile</SubType>
       <Link>fixsfdi.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fixsfsi.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fixsfsi.S">
       <SubType>compile</SubType>
       <Link>fixsfsi.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fixunssfsi.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fixunssfsi.S">
       <SubType>compile</SubType>
       <Link>fixunssfsi.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\floatdisf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\floatdisf.S">
       <SubType>compile</SubType>
       <Link>floatdisf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\floatsisf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\floatsisf.S">
       <SubType>compile</SubType>
       <Link>floatsisf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\floatundisf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\floatundisf.S">
       <SubType>compile</SubType>
       <Link>floatundisf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\floor.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\floor.S">
       <SubType>compile</SubType>
       <Link>floor.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fma.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fma.S">
       <SubType>compile</SubType>
       <Link>fma.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fmax.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fmax.S">
       <SubType>compile</SubType>
       <Link>fmax.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fmin.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fmin.S">
       <SubType>compile</SubType>
       <Link>fmin.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fmod.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fmod.S">
       <SubType>compile</SubType>
       <Link>fmod.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp32def.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp32def.h">
       <SubType>compile</SubType>
       <Link>fp32def.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_arccos.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_arccos.S">
       <SubType>compile</SubType>
       <Link>fp_arccos.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_cmp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_cmp.S">
       <SubType>compile</SubType>
       <Link>fp_cmp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_inf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_inf.S">
       <SubType>compile</SubType>
       <Link>fp_inf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_mintl.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_mintl.S">
       <SubType>compile</SubType>
       <Link>fp_mintl.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_mpack.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_mpack.S">
       <SubType>compile</SubType>
       <Link>fp_mpack.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_nan.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_nan.S">
       <SubType>compile</SubType>
       <Link>fp_nan.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_negdi.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_negdi.S">
       <SubType>compile</SubType>
       <Link>fp_negdi.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_norm2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_norm2.S">
       <SubType>compile</SubType>
       <Link>fp_norm2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_powser.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_powser.S">
       <SubType>compile</SubType>
       <Link>fp_powser.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_powsodd.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_powsodd.S">
       <SubType>compile</SubType>
       <Link>fp_powsodd.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_pscA.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_pscA.S">
       <SubType>compile</SubType>
       <Link>fp_pscA.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_pscB.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_pscB.S">
       <SubType>compile</SubType>
       <Link>fp_pscB.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_rempio2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_rempio2.S">
       <SubType>compile</SubType>
       <Link>fp_rempio2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_round.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_round.S">
       <SubType>compile</SubType>
       <Link>fp_round.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_sinus.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_sinus.S">
       <SubType>compile</SubType>
       <Link>fp_sinus.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_split3.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_split3.S">
       <SubType>compile</SubType>
       <Link>fp_split3.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_trunc.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_trunc.S">
       <SubType>compile</SubType>
       <Link>fp_trunc.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\fp_zero.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\fp_zero.S">
       <SubType>compile</SubType>
       <Link>fp_zero.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\frexp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\frexp.S">
       <SubType>compile</SubType>
       <Link>frexp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\gesf2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\gesf2.S">
       <SubType>compile</SubType>
       <Link>gesf2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\hypot.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\hypot.S">
       <SubType>compile</SubType>
       <Link>hypot.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\inverse.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\inverse.S">
       <SubType>compile</SubType>
       <Link>inverse.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\isfinite.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\isfinite.S">
       <SubType>compile</SubType>
       <Link>isfinite.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\isinf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\isinf.S">
       <SubType>compile</SubType>
       <Link>isinf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\isnan.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\isnan.S">
       <SubType>compile</SubType>
       <Link>isnan.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\ldexp.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\ldexp.S">
       <SubType>compile</SubType>
       <Link>ldexp.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\log.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\log.S">
       <SubType>compile</SubType>
       <Link>log.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\log10.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\log10.S">
       <SubType>compile</SubType>
       <Link>log10.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\lrint.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\lrint.S">
       <SubType>compile</SubType>
       <Link>lrint.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\lround.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\lround.S">
       <SubType>compile</SubType>
       <Link>lround.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\modf.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\modf.S">
       <SubType>compile</SubType>
       <Link>modf.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\mulsf3.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\mulsf3.S">
       <SubType>compile</SubType>
       <Link>mulsf3.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\mulsf3x.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\mulsf3x.S">
       <SubType>compile</SubType>
       <Link>mulsf3x.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\negsf2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\negsf2.S">
       <SubType>compile</SubType>
       <Link>negsf2.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\ntz.h">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\ntz.h">
       <SubType>compile</SubType>
       <Link>ntz.h</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\pow.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\pow.S">
       <SubType>compile</SubType>
       <Link>pow.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\round.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\round.S">
       <SubType>compile</SubType>
       <Link>round.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\signbit.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\signbit.S">
       <SubType>compile</SubType>
       <Link>signbit.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\sin.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\sin.S">
       <SubType>compile</SubType>
       <Link>sin.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\sinh.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\sinh.S">
       <SubType>compile</SubType>
       <Link>sinh.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\sqrt.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\sqrt.S">
       <SubType>compile</SubType>
       <Link>sqrt.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\square.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\square.S">
       <SubType>compile</SubType>
       <Link>square.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\tan.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\tan.S">
       <SubType>compile</SubType>
       <Link>tan.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\tanh.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\tanh.S">
       <SubType>compile</SubType>
       <Link>tanh.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\trunc.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\trunc.S">
       <SubType>compile</SubType>
       <Link>trunc.S</Link>
     </Compile>
-    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\libm\fplib\unordsf2.S">
+    <Compile Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\libm\fplib\unordsf2.S">
       <SubType>compile</SubType>
       <Link>unordsf2.S</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\ctoasm.inc">
+    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\ctoasm.inc">
       <SubType>compile</SubType>
       <Link>ctoasm.inc</Link>
     </None>
-    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\gasava.inc">
+    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\gasava.inc">
       <SubType>compile</SubType>
       <Link>gasava.inc</Link>
     </None>
-    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1056\avr8-gnu-toolchain\avr\common\macros.inc">
+    <None Include="C:\Program Files %28x86%29\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\avr\common\macros.inc">
       <SubType>compile</SubType>
       <Link>macros.inc</Link>
     </None>
